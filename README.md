@@ -17,6 +17,6 @@ The Particle Swarm Optimization is a modified pervious version of "Constrained P
 
 When using this source code, you need to cite the reference [1] and [2].
 
-[1] Kang, X., Armand, M., Otake, Y., Yau, W.-P., Cheung, P. Y. S., Hu, Y., & Taylor, R. H. (2014). Robustness and Accuracy of Feature-Based Single Image 2-D–3-D Registration Without Correspondences for Image-Guided Intervention. IEEE Transactions on Bio-Medical Engineering, 61(1), 149–161. http://doi.org/10.1109/TBME.2013.2278619
+[1] X. Kang, M. Armand, Y. Otake, W.-P. Yau, P. Y. S. Cheung, Y. Hu, & R. H. Taylor, (2014). Robustness and Accuracy of Feature-Based Single Image 2-D–3-D Registration Without Correspondences for Image-Guided Intervention. IEEE Transactions on Bio-Medical Engineering, 61(1), 149–161. http://doi.org/10.1109/TBME.2013.2278619
 
-[2] SPIE
+[2] X. Kang, R. H. Taylor, M. Armand, Y. Otake, W. P. Yau, et al. "Correspondenceless 3D-2D registration based on expectation conditional maximization", Proc. SPIE 7964, Medical Imaging 2011: Visualization, Image-Guided Procedures, and Modeling, 79642Z (March 01, 2011); http://dx.doi.org/10.1117/12.878618
