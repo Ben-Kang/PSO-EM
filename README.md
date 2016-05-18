@@ -10,19 +10,17 @@ Version: 1.0.0  Date: May 12, 2016
 
 # Dependency
 
-The Particle Swarm Optimization is a modified pervious version of "Constrained Particle Swarm Optimization" (http://www.mathworks.com/matlabcentral/fileexchange/25986-constrained-particle-swarm-optimization). 
+The Particle Swarm Optimization is a modified pervious version of the Constrained Particle Swarm Optimization (http://www.mathworks.com/matlabcentral/fileexchange/25986-constrained-particle-swarm-optimization). 
 
-Only the minimal required functions are included in this source code.  If you want to use the latest version of "Constrained Particle Swarm Optimization", proper modifications to the latest PSO code have to made accordingly.
+Only the minimal required functions are included in this source code.  If you want to use the latest version of the Constrained Particle Swarm Optimization, proper modifications to the latest PSO and this source code may have to be made accordingly.
 
 # Citation
 
-If you use this code as part of your work, please cite the following papers:
+**If used in research work, citations to the following papers are required**
 
 1. X. Kang, M. Armand, Y. Otake, W.-P. Yau, P. Y. S. Cheung, Y. Hu, & R. H. Taylor. **Robustness and Accuracy of Feature-Based Single Image 2-D–3-D Registration Without Correspondences for Image-Guided Intervention**. IEEE Transactions on Bio-Medical Engineering, 61(1), 149–161, 2014. http://doi.org/10.1109/TBME.2013.2278619
 
 2. X. Kang, R. H. Taylor, M. Armand, Y. Otake, W. P. Yau, et al. **Correspondenceless 3D-2D Registration Based on Expectation Conditional Maximization**, Proc. SPIE 7964, Medical Imaging 2011: Visualization, Image-Guided Procedures, and Modeling, 79642Z, 2011. http://dx.doi.org/10.1117/12.878618
-
-
 
 # Contact Info
 
