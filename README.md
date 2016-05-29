@@ -9,19 +9,19 @@ Version: 1.0.0  Date: May 12, 2016
 2-D-to-3-D registration is critical and fundamental in image-guided interventions. It could be achieved from single image using paired point correspondences between the object and the image. **The common assumption that paired point correspondences can readily be established does NOT necessarily hold** for image guided interventions. Intraoperative image clutter and an imperfect feature extraction method may introduce false detection and, due to the physics of X-ray imaging, the 2-D image point features may be indistinguishable from each other and/or obscured by anatomy causing false detection of the point features. These create difficulties in establishing correspondences between image features and 3-D data points. In this paper, we propose an accurate, robust, and fast method to accomplish 2-D-to-3-D registration **using a single image without the need for establishing paired correspondences in the presence of false detections**. We formulate 2-D-3-D registration as a maximum likelihood estimation problem, which is then solved by **embeding Expectation Maximization (EM) in Particle Swarm Optimization (PSO)**. The proposed method was evaluated in a phantom and a cadaver study. In the phantom study, it achieved **subdegree rotation errors** and **submillimeter in-plane (X-Y plane) translation errors**. In both studies, it outperformed the state-of-the-art methods that do not use paired correspondences and achieved the same accuracy as a state-of-the-art global optimal method that uses correct paired correspondences.
 
 # Experiment Results
-## Phantom Study
-<iframe width="640" height="360" src="https://www.youtube.com/embed/XgQBXPwkW1w?showinfo=0" frameborder="0" allowfullscreen></iframe>
+## Phantom Study (YouTube video)
+[![Phantom Study](http://img.youtube.com/vi/XgQBXPwkW1w/0.jpg)](http://www.youtube.com/watch?v=XgQBXPwkW1w "Phantom Study")
 
 The **correspondence map** is a visualization of the correspondence probabilities $$p_{mn}$$ with the horizontal axis the order of image points and the vertical axis the order of model points. The higher the value of a block in the map is, the higher the correspondence probability is.
 
-### Robustness to A Large Amount of Outliers
-<iframe width="640" height="360" src="https://www.youtube.com/embed/FxADwn2lnqs?showinfo=0" frameborder="0" allowfullscreen></iframe>
+### Robustness to A Large Amount of Outliers (YouTube video)
+[![Robustness to Outliers](http://img.youtube.com/vi/FxADwn2lnqs/0.jpg)](http://www.youtube.com/watch?v=FxADwn2lnqs "Robustness to Outliers")
 
-## Cadaver Stady
-<iframe width="640" height="360" src="https://www.youtube.com/embed/qkwaYUClXhA?showinfo=0" frameborder="0" allowfullscreen></iframe>
+## Cadaver Stady (YouTube video)
+[![Cadaver Stady](http://img.youtube.com/vi/qkwaYUClXhA/0.jpg)](http://www.youtube.com/watch?v=qkwaYUClXhA "Cadaver Stady")
 
-### Compare to SoftPOSIT
-<iframe width="480" height="360" src="https://www.youtube.com/embed/crc4_oyl1bc?showinfo=0" frameborder="0" allowfullscreen></iframe>
+### Comparison to SoftPOSIT (YouTube video)
+[![Compare to SoftPOSIT](http://img.youtube.com/vi/crc4_oyl1bc/0.jpg)](http://www.youtube.com/watch?v=crc4_oyl1bc "Comparison to SoftPOSIT")
 
 # How To Start
 
