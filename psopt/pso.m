@@ -282,14 +282,14 @@ options.VelocityLimit = abs(options.VelocityLimit);
 % ---------------------------------------------------------------------------
 if strcmpi(options.UseParallel,'always')
   if strcmpi(options.Vectorized,'on')
-    if options.Verbosity > 2 
+    if options.Verbosity > 2
       msg = 'Both ''Vectorized'' and ''UseParallel'' options have ' ;
       msg = [msg 'been set. The problem will be computed locally '] ;
       warning('%s using the ''Vectorized'' computation method.',...
           msg) ;
     end
   elseif isempty(ver('distcomp')) % Check for toolbox installed
-    if options.Verbosity > 2 
+    if options.Verbosity > 2
       msg = 'Parallel computing toolbox not installed. Problem' ;
       warning('%s will be computed locally instead.', msg) ;
     end
@@ -370,7 +370,7 @@ if ~isempty(options.PlotFcns)
         'NextPlot', 'replace', ...
         'Tag', 'PSO Plots' );
   else
-    state.hfigure = hFig; 
+    state.hfigure = hFig;
     set(state.hfigure, 'Name', 'PSO-EM');                        % @HERE
     set(0, 'CurrentFigure', state.hfigure);                      % @HERE
     clf(state.hfigure);
@@ -395,9 +395,9 @@ end % if ~isempty
 
 %% Iterate swarm
 % ---------------------------------------------------------------------------
-n = options.PopulationSize ; 
+n = options.PopulationSize ;
 itr = options.Generations ;
-averagetime = 0 ; 
+averagetime = 0 ;
 stalltime = 0;
 tic
 for iGen = 1:itr
@@ -450,7 +450,7 @@ for iGen = 1:itr
       nvalid = numel(validi);
       x = state.Population(validi,:);
       scoretmp = inf*ones(nvalid,1) ;
-      
+
       parfor i = 1:nvalid ;
         scoretmp(i) = fitnessfcn(x, state);                      % @HERE
       end % for i
@@ -467,7 +467,7 @@ for iGen = 1:itr
     end % if strcmpi
   end
   % -------------------------------------------------------------------------
-    
+
 	% Update the local bests
 	% -------------------------------------------------------------------------
 	betterindex = state.Score < state.fLocalBests ;
@@ -491,7 +491,7 @@ for iGen = 1:itr
     state.LastImprovement = iGen ;
     imprvchk = iGen > options.StallGenLimit && ...
            (state.fGlobalBest(iGen - options.StallGenLimit) - ...
-            state.fGlobalBest(iGen)) / (iGen - options.StallGenLimit) < ...
+            state.fGlobalBest(iGen)) / options.StallGenLimit < ...
             options.TolFun ;
     if imprvchk
       exitflag = 1 ;
@@ -503,7 +503,7 @@ for iGen = 1:itr
   else % No improvement from last iteration
 		state.fGlobalBest(iGen) = state.fGlobalBest(iGen-1);
 	end % if minfitness
-	
+
   % Post iteration processing                                         % @HERE
   % -------------------------------------------------------------------------
 	if ~isempty(options.PostIterateFcn)
@@ -573,7 +573,7 @@ for iGen = 1:itr
 	if ~isempty(options.OutputFcn) && ~mod(iGen,options.PlotInterval)
     state = options.OutputFcn(state, options, flag);
 	end % if ~isempty
-	
+
 	if strcmpi(flag, 'done')
 		break
 	end % if strcmpi
