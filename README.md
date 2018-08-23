@@ -25,13 +25,16 @@ The **correspondence map** is a visualization of the correspondence probabilitie
 
 # How To Start
 
-Rum the demo.m.
+- Compile the C source code by run `mex calcQFcn_mex.c`
+- Run the `demo.m`.
 
 # Dependency
 
-The source code is self-contained.
+The source code is mostly self-contained.
 
-The Particle Swarm Optimization is a modified pervious version of the Constrained Particle Swarm Optimization (http://www.mathworks.com/matlabcentral/fileexchange/25986-constrained-particle-swarm-optimization).  Only the minimal required functions are included in this source code.  If you want to use the latest version of the Constrained Particle Swarm Optimization, proper modifications to the latest PSO and this source code may have to be made accordingly.
+The Particle Swarm Optimization is a modified pervious version of the [Constrained Particle Swarm Optimization](http://www.mathworks.com/matlabcentral/fileexchange/25986-constrained-particle-swarm-optimization).  Only the minimal required functions are included in this source code.  If you want to use the latest version of the Constrained Particle Swarm Optimization, proper modifications to the latest PSO and this source code may have to be made accordingly.
+
+The function `round2.m` can be downloaded from [here](https://www.mathworks.com/matlabcentral/fileexchange/4261-round2).
 
 # Citation
 
@@ -60,6 +63,10 @@ doi = {10.1117/12.878618},
 volume = {7964},
 }
 ```
+
+# License
+
+See [LICENSE](LICENSE).
 
 # Contact Info
 
