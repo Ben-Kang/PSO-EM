@@ -25,13 +25,17 @@ The **correspondence map** is a visualization of the correspondence probabilitie
 
 # How To Start
 
-Rum the demo.m.
+- Compile the C source code by mex calcQFcn_mex.c
+
+- Rum the demo.m.
 
 # Dependency
 
-The source code is self-contained.
+The source code is mostly self-contained.
 
 The Particle Swarm Optimization is a modified pervious version of the Constrained Particle Swarm Optimization (http://www.mathworks.com/matlabcentral/fileexchange/25986-constrained-particle-swarm-optimization).  Only the minimal required functions are included in this source code.  If you want to use the latest version of the Constrained Particle Swarm Optimization, proper modifications to the latest PSO and this source code may have to be made accordingly.
+
+The function round2.m can be obtained from https://www.mathworks.com/matlabcentral/fileexchange/4261-round2.
 
 # Citation
 
@@ -54,12 +58,16 @@ author = {Kang, X. and Taylor, R. H. and Armand, M. and Otake, Y. and Yau, W. P.
 title = {Correspondenceless 3D-2D registration based on expectation conditional maximization},
 booktitle = {Prog. Biomed. Opt. Imaging - Proc. SPIE},
 pages = {79642Z},
-year = {2011}
+year = {2011},
 month = {Mar},
 doi = {10.1117/12.878618},
 volume = {7964},
 }
 ```
+
+# Livense
+
+See the license file.
 
 # Contact Info
 
